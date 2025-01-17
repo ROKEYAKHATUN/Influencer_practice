@@ -5,9 +5,9 @@
   padding: 0;
   margin: 0;
 }
-body{
-    max-width: 1440px;
-    margin: 0 auto;
+body {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 header {
   padding: 50px 200px;
@@ -36,13 +36,11 @@ li a {
   font-size: 2rem;
 }
 .banner {
-    margin-top: 50px;
+  margin-top: 50px;
   display: flex;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   align-items: center;
-  
- 
 }
 .banner-title {
   color: #3a3a3a;
@@ -65,7 +63,6 @@ li a {
   cursor: pointer;
   margin-top: 20px;
 }
-
 
 .circle {
   position: absolute;
@@ -95,40 +92,71 @@ li a {
 }
 /*main related css*/
 
-.sponsors{
-    margin-top:100px;
-    align-items: center;
-   
+.sponsors {
+  margin-top: 100px;
+  align-items: center;
 }
-.sponsors-img{
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    gap: 20px;
-   }
+.sponsors-img {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 200px;
+}
+.shop-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.shop {
+  height: 476px;
+  width: 329px;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 1px 1px 20px gray;
+  background-color: #ffffff;
+  align-items: center;
+}
+.shop-details {
+  padding-left: 10px;
+}
 
 /*small device responsive*/
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
+  header,
+  main {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    gap: 50px;
+    margin-top: 50px;
+  }
 
-    header{
-        padding: 20px;
-    }
-   nav{
-         flex-direction: column; 
-         gap: 20px; 
-    }
-    .banner{
-        flex-direction: column-reverse;
-        gap:50px;
-        margin-top: 50px;
-}
-     
-     .sponsors-img{
-        display: grid;
-        grid-template-columns:repeat(4,1fr);
-        gap:20px;
-        margin-left: 0;
-     }
-     .btn-primary{
-      margin-left:150px;}
-     
+  .sponsors-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-left: 0;
+  }
+  .btn-primary {
+    margin-left: 150px;
+  }
+
+  .shop-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-left: 50px;
+  }
 }
