@@ -8,6 +8,7 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+  
 }
 header {
   padding: 50px 200px;
@@ -38,7 +39,6 @@ li a {
 .banner {
   margin-top: 50px;
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   align-items: center;
 }
@@ -127,8 +127,52 @@ main {
   padding-left: 10px;
 }
 
+.feature {
+  margin-top: 50px;
+  padding: 50px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.feature-section{
+  width:550px;
+  padding:20px;
+}
+.join{
+  border-radius: 0;
+}
+.feature-title{
+ font-size:2rem ;
+}
+.footer-text{
+  max-width: 1440px;
+  margin: 0 auto;
+  background:black;
+  text-align: center;
+  padding: 50px 50px;
+  margin-top: 50px;
+  margin-bottom:50px ;
+  
+}
+
+.footer-title{
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.footer-description{
+  font-weight: 250;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+
+
+
+
 /*small device responsive*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width:576px) {
   header,
   main {
     padding: 20px;
@@ -137,7 +181,7 @@ main {
     flex-direction: column;
     gap: 20px;
   }
-  .banner {
+  .banner,.feature  {
     flex-direction: column-reverse;
     gap: 50px;
     margin-top: 50px;
@@ -159,4 +203,12 @@ main {
     gap: 50px;
     margin-left: 50px;
   }
+  .feature-section{
+    max-width: 500px;
+    text-align: center;
+  }
+  .join{
+    margin-right: 50%;
+  }
+  
 }
